@@ -12,3 +12,9 @@ html, body {
     background: -0-radial-gradient(#555, #000);
     background: radial-gradient(#555, #000);
 }
+
+#stars {
+    height: 100%;
+    width: 100%;
+    background: url("images/stars.png");
+}

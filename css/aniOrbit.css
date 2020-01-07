@@ -9,12 +9,50 @@ html, body {
     background: black;
     background: -webkit-radial-gradient(#555, #000);
     background: -moz-radial-gradient(#555, #000);
-    background: -0-radial-gradient(#555, #000);
+    background: -o-radial-gradient(#555, #000);
     background: radial-gradient(#555, #000);
 }
 
 #stars {
+    position: relative;
+    z-index: 2;
     height: 100%;
     width: 100%;
-    background: url("images/stars.png");
+    /* ../images/stars.png" had a relative path, possible of multiple folders having png image */
+    background: url("../images/stars.png");
+}
+
+#sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    /* trick to put sun in the center of the page */
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 200px;
+    
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    
+    background: orange;
+    background: -webkit-radial-gradient(#f5c313, #ec7e08);
+    background: -moz-radial-gradient(#f5c313, #ec7e08);
+    background: -o-radial-gradient(#f5c313, #ec7e08);
+    background: radial-gradient(#f5c313, #ec7e08);
+    
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -moz-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+}
+
+#earthOrbit {
+    border: solid 1px red;
+    
+    position: absolute;
+    z-index: 4;
+    height: 600px;
+    width: 600px;
 }

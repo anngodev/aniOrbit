@@ -1,5 +1,6 @@
 /* AniOrbit CSS */
 
+/* STAR PULSE ANIMATION */
 @-webkit-keyframes starPulse {
     from {opacity: 1; }
     to  {opacity: 0.2; }   
@@ -19,6 +20,85 @@
     from {opacity: 1; }
     to  {opacity: 0.2; }
 }
+
+/* SOLAR FLARE ANIMATION */
+@-webkit-keyframes sunFlare {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    
+    to {
+        -webkit-box-shadow: 0 0 100px #f5c91a;
+        -moz-box-shadow: 0 0 100px #f5c91a;
+        box-shadow: 0 0 100px #f5c91a;
+    }
+}
+
+@-moz-keyframes sunFlare {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    
+    to {
+        -webkit-box-shadow: 0 0 120px #f5c91a;
+        -moz-box-shadow: 0 0 120px #f5c91a;
+        box-shadow: 0 0 120px #f5c91a;
+    }
+}
+
+@-o-keyframes sunFlare {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    
+    to {
+        -webkit-box-shadow: 0 0 120px #f5c91a;
+        -moz-box-shadow: 0 0 120px #f5c91a;
+        box-shadow: 0 0 120px #f5c91a;
+    }
+}
+
+@keyframes sunFlare {
+    from {
+        -webkit-box-shadow: 0 0 50px #f5c91a;
+        -moz-box-shadow: 0 0 50px #f5c91a;
+        box-shadow: 0 0 50px #f5c91a;
+    }
+    
+    to {
+        -webkit-box-shadow: 0 0 120px #f5c91a;
+        -moz-box-shadow: 0 0 120px #f5c91a;
+        box-shadow: 0 0 120px #f5c91a;
+    }
+}
+
+/* ORBIT ANIMATION */
+@-webkit-keyframes orbitSun {
+    from { transform: rotate(0); }
+    to   { transform: rotate(360deg); }
+}
+
+@-moz-keyframes orbitSun {
+    from { transform: rotate(0); }
+    to   { transform: rotate(360deg); }
+}
+
+@-o-keyframes orbitSun {
+    from { transform: rotate(0); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes orbitSun {
+    from { transform: rotate(0); }
+    to   { transform: rotate(360deg); }
+}
+
 
 html, body {
     height: 100%;
@@ -72,6 +152,11 @@ html, body {
     -webkit-box-shadow: 0 0 50px #f5c91a;
     -moz-box-shadow: 0 0 50px #f5c91a;
     box-shadow: 0 0 50px #f5c91a;
+    
+    -webkit-animation: sunFlare 3s infinite alternate;
+    -moz-animation: sunFlare 3s infinite alternate;
+    -o-animation: sunFlare 3s infinite alternate;
+    animation: sunFlare 3s infinite alternate;
 }
 
 #earthOrbit {
@@ -90,6 +175,11 @@ html, body {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%
     border-radius: 100%;
+    
+    -webkit-animation: orbitSun 30s linear infinite;
+    -moz-animation: orbitSun 30s linear infinite;
+    -o-animation: orbitSun 30s linear infinite;
+    animation: orbitSun 30s linear infinite;
 }
 
 #earth {

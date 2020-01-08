@@ -79,22 +79,22 @@
 }
 
 /* ORBIT ANIMATION */
-@-webkit-keyframes orbitSun {
+@-webkit-keyframes orbit {
     from { transform: rotate(0); }
     to   { transform: rotate(360deg); }
 }
 
-@-moz-keyframes orbitSun {
+@-moz-keyframes orbit {
     from { transform: rotate(0); }
     to   { transform: rotate(360deg); }
 }
 
-@-o-keyframes orbitSun {
+@-o-keyframes orbit {
     from { transform: rotate(0); }
     to   { transform: rotate(360deg); }
 }
 
-@keyframes orbitSun {
+@keyframes orbit {
     from { transform: rotate(0); }
     to   { transform: rotate(360deg); }
 }
@@ -159,9 +159,7 @@ html, body {
     animation: sunFlare 3s infinite alternate;
 }
 
-#earthOrbit {
-    border: solid 1px red;
-    
+#earthOrbit { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,10 +174,10 @@ html, body {
     -moz-border-radius: 100%
     border-radius: 100%;
     
-    -webkit-animation: orbitSun 30s linear infinite;
-    -moz-animation: orbitSun 30s linear infinite;
-    -o-animation: orbitSun 30s linear infinite;
-    animation: orbitSun 30s linear infinite;
+    -webkit-animation: orbit 30s linear infinite;
+    -moz-animation: orbit 30s linear infinite;
+    -o-animation: orbit 30s linear infinite;
+    animation: orbit 30s linear infinite;
 }
 
 #earth {
@@ -189,11 +187,14 @@ html, body {
     
     margin-top: -40px;
     
+    -webkit-animation: orbit 3s linear infinite;
+    -moz-animation: orbit 3s linear infinite;
+    -o-animation: orbit 3s linear infinite;
+    animation: orbit 3s linear infinite;
+    
 }
 
 #moonOrbit {
-    border: solid 1px red;
-    
     height: 120px;
     width: 120px;
     position: absolute;
@@ -205,6 +206,11 @@ html, body {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+    
+    -webkit-animation: orbit 4s linear infinite reverse;
+    -moz-animation: orbit 4s linear infinite reverse;
+    -o-animation: orbit 4s linear infinite reverse;
+    animation: orbit 4s linear infinite reverse;
 }
 
 #moon {

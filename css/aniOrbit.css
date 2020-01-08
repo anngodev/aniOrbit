@@ -1,5 +1,25 @@
 /* AniOrbit CSS */
 
+@-webkit-keyframes starPulse {
+    from {opacity: 1; }
+    to  {opacity: 0.2; }   
+}
+
+@-moz-keyframes starPulse {
+    from {opacity: 1; }
+    to  {opacity: 0.2; }   
+}
+
+@-o-keyframes starPulse {
+    from {opacity: 1; }
+    to  {opacity: 0.2; }   
+}
+
+@keyframes starPulse {
+    from {opacity: 1; }
+    to  {opacity: 0.2; }
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -20,6 +40,12 @@ html, body {
     width: 100%;
     /* ../images/stars.png" had a relative path, possible of multiple folders having png image */
     background: url("../images/stars.png");
+    
+    /* animation name, duration, how long, alternating motion */
+    -webkit-animation: starPulse 4s infinite alternate;
+    -moz-animation: starPulse 4s infinite alternate;
+    -o-animation: starPulse 4s infinite alternate;
+    animation: starPulse 4s infinite alternate;
 }
 
 #sun {
@@ -85,6 +111,19 @@ html, body {
     top: 50%;
     left: -20px;
     margin-top: -60px;
+    
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+#moon {
+    height: 20px;
+    width: 20px;
+    background: gray;
+    background: -webkit-radial-gradient(#ddd, #888);
+    background: -moz-radial-gradient(#ddd, #888);
+    background: radial-gradient(#ddd, #888);
     
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;

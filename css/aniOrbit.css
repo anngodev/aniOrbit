@@ -52,7 +52,41 @@ html, body {
     border: solid 1px red;
     
     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
     z-index: 4;
+    /* height should be 700px */
     height: 600px;
     width: 600px;
+    
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%
+    border-radius: 100%;
+}
+
+#earth {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    
+    margin-top: -40px;
+    
+}
+
+#moonOrbit {
+    border: solid 1px red;
+    
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: -20px;
+    margin-top: -60px;
+    
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
 }

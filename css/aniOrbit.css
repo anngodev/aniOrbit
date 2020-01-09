@@ -166,7 +166,6 @@ html, body {
     margin-top: -300px;
     margin-left: -300px;
     z-index: 4;
-    /* height should be 700px */
     height: 600px;
     width: 600px;
     
@@ -174,10 +173,10 @@ html, body {
     -moz-border-radius: 100%
     border-radius: 100%;
     
-    -webkit-animation: orbit 30s linear infinite;
-    -moz-animation: orbit 30s linear infinite;
-    -o-animation: orbit 30s linear infinite;
-    animation: orbit 30s linear infinite;
+    -webkit-animation: orbit 40s linear infinite;
+    -moz-animation: orbit 40s linear infinite;
+    -o-animation: orbit 40s linear infinite;
+    animation: orbit 40s linear infinite;
 }
 
 #earth {
@@ -186,11 +185,11 @@ html, body {
     left: 0;
     
     margin-top: -40px;
-    
-    -webkit-animation: orbit 3s linear infinite;
-    -moz-animation: orbit 3s linear infinite;
-    -o-animation: orbit 3s linear infinite;
-    animation: orbit 3s linear infinite;
+    /* Earth ratation animation */
+    -webkit-animation: orbit 7s linear infinite;
+    -moz-animation: orbit 7s linear infinite;
+    -o-animation: orbit 7s linear infinite;
+    animation: orbit 7s linear infinite;
     
 }
 
@@ -207,10 +206,10 @@ html, body {
     -moz-border-radius: 100%;
     border-radius: 100%;
     
-    -webkit-animation: orbit 4s linear infinite reverse;
-    -moz-animation: orbit 4s linear infinite reverse;
-    -o-animation: orbit 4s linear infinite reverse;
-    animation: orbit 4s linear infinite reverse;
+    -webkit-animation: orbit 10s linear infinite reverse;
+    -moz-animation: orbit 10s linear infinite reverse;
+    -o-animation: orbit 10s linear infinite reverse;
+    animation: orbit 10s linear infinite reverse;
 }
 
 #moon {
